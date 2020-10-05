@@ -1,0 +1,24 @@
+1. local storage to store time and task AFTER the save button is clicked 
+
+
+2. on clicks for all the save buttons
+
+3. timeblocks are text blocks
+4. each row has three columns: time, text area, save button 
+5. ech text area has its own id 
+retrieve value .value , value is what the user is typing into the text area
+declare var = $("#timeslot").val(). trim(); 
+localStorage.setItem(evenTime, event); 
+array with times
+using moments to compare current time to stored time in array
+var time = 
+items in time array match timeslots in html (div) 
+time and attribute 
+text area is a specific area in html set how many rows you want with rows attribute 
+6. get item from local every time page loads
+
+
+1.changed id to a string of a number that way we can convert easily to a value using parsInt   <div id="9" class="row time-block">
+2. set a variable so the string that was just created and converted that to a value using parsInt   var blockHour = parseInt($(this).attr("id"));
+3. compared value/string to current time  if (blockHour < currentHour)    var currentHour = moment().hour();
+4.then based on that we added classes  $(this).addClass("past");
