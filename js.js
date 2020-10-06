@@ -1,6 +1,6 @@
 $(document).ready(function () {
     
-    $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
+    $("#currentDay").text(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
 
     //Assign saveBtn click listener for user input and time stamp??
     $(".saveBtn").on("click", function () {
