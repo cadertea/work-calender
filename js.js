@@ -28,7 +28,7 @@ $(document).ready(function () {
         //gets what time it is now in hours
         var currentime = moment().hour();
 
-        
+        // turns the string 9 into a integer value
         $(".time-block").each(function () {
             var idtime = parseInt($(this).attr("id"));
             console.log( idtime, currentime)
