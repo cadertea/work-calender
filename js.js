@@ -13,7 +13,7 @@ $(document).ready(function () {
         //set items in local storage.
         localStorage.setItem(time, text);
     })
-    //load any saved data from LocalStorage - do this for each hour created.
+    //load any saved data from LocalStorage
     $("#9  .description").val(localStorage.getItem("9"));
     $("#10 .description").val(localStorage.getItem("10"));
     $("#11 .description").val(localStorage.getItem("11"));
