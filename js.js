@@ -23,4 +23,19 @@ $(document).ready(function () {
     $("#16 .description").val(localStorage.getItem("16"));
     $("#17 .description").val(localStorage.getItem("17"));
 
+
+    function timetracker() {
+        //gets what time it is now in hours
+        var currentime = moment().hour();
+
+        
+        $(".time-block").each(function () {
+            var idtime = parseInt($(this).attr("id"));
+            console.log( idtime, currentime)
+
+          
+        })
+    }
+  
+
 })
